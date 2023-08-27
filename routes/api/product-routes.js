@@ -125,8 +125,8 @@ router.delete('/:id', (req, res) => {
     })
       .catch((err) => {
         console.log(err);
-        res.status
-      })
+        res.status(500).json(err);
+      });
 });
 
 module.exports = router;
